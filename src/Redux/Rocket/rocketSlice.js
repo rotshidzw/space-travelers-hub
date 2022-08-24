@@ -35,7 +35,6 @@ const rocketSlice = createSlice({
     },
     getActiveRockets: {
       reducer(state) {
-        console.log(state);
         return state.rockets.filter(
           (rocket) => rocket.reserved === true,
         );
@@ -61,7 +60,6 @@ const rocketSlice = createSlice({
     [fetchRockets.fulfilled]: (state, action) => {
       const container = [];
       state.status = 'succeeded';
-      //   console.log(action.payload.data);
       const { data } = action.payload;
       data.forEach((x) => {
         const rocket = {};
