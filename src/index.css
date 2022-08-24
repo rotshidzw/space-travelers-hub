@@ -1,9 +1,31 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: #121212;
+  text-decoration: none;
+  padding-right: 10px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+h2 {
+  color: #121212;
+  text-decoration: none;
+  padding-right: 10px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
 }
