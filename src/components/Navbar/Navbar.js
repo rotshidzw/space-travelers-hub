@@ -12,7 +12,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-right-top">
         <NavLink
-          to="/rockets"
+          to="/"
           className={({ isActive }) => (isActive ? 'styled-link' : 'no-styled-link')}
         >
           Rockets
