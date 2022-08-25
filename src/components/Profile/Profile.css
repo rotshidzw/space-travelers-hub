@@ -17,14 +17,15 @@
   border: 1px solid goldenrod;
 }
 
-.user-rockets,
 .user-missions {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.user-missions,
 .user-rockets {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
@@ -50,7 +51,6 @@
 .action-btns .read-more-btn,
 .action-btns .join-btn {
   background-color: transparent;
-  color: #fff;
   border: 1px solid #6c757e;
   padding: 5px;
   border-radius: 5px;
