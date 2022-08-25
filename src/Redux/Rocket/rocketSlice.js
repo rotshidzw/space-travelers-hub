@@ -8,7 +8,6 @@ export const initialState = {
   status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
   error: null,
 };
-
 export const fetchRockets = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
@@ -16,7 +15,6 @@ export const fetchRockets = createAsyncThunk(
     return response;
   },
 );
-
 const rocketSlice = createSlice({
   name: 'rockets',
   initialState,
@@ -80,11 +78,9 @@ const rocketSlice = createSlice({
     },
   },
 });
-
 export const getAllRockets = (state) => state.rockets.rockets;
 export const getRocketStatus = (state) => state.rockets;
 export const getRocketError = (state) => state.rockets;
-
 export const {
   setRockets, getRockets, updateRocket, getActiveRockets,
 } = rocketSlice.actions;
