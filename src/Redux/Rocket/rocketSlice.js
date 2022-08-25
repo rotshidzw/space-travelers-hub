@@ -28,6 +28,7 @@ const rocketSlice = createSlice({
           rocket_name: action.payload.rocket_name,
           description: action.payload.description,
           flickr_images: action.payload.flickr_images[0],
+          url: action.payload.wikipedia,
           reserved: false,
         };
         state.rockets.push(rockets);
@@ -67,6 +68,7 @@ const rocketSlice = createSlice({
         rocket.rocketName = x.rocket_name;
         rocket.description = x.description;
         rocket.flickrImages = x.flickr_images;
+        rocket.url = x.wikipedia;
         rocket.reserved = false;
         container.push(rocket);
       });
