@@ -9,10 +9,13 @@ export const initialState = {
   error: null,
 };
 
-export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
-  const response = await HttpService.getMissions('missions');
-  return response;
-});
+export const fetchMissions = createAsyncThunk(
+  'missions/fetchMissions',
+  async () => {
+    const response = await HttpService.getMissions('missions');
+    return response;
+  },
+);
 
 const missionSlice = createSlice({
   name: 'missions',
@@ -24,6 +27,7 @@ const missionSlice = createSlice({
           id: action.payload.mission_id,
           missionName: action.payload.mission_name,
           description: action.payload.description,
+          url: action.payload.wikipedia,
           reserved: false,
         };
         state.missions.push(missions);
@@ -55,6 +59,7 @@ const missionSlice = createSlice({
         mission.id = x.mission_id;
         mission.missionName = x.mission_name;
         mission.description = x.description;
+        mission.url = x.wikipedia;
         container.push(mission);
       });
       state.missions = container;
