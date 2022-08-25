@@ -1,13 +1,11 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllRockets, updateRocket } from '../../Redux/Rocket/rocketSlice';
+import { useDispatch } from 'react-redux';
+import { updateRocket } from '../../Redux/Rocket/rocketSlice';
 import './Rockets.css';
 
 const Rockets = (rocket) => {
   const dispatch = useDispatch();
-  const rockets = useSelector(getAllRockets);
 
-  console.log(rockets);
   const {
     rocket: {
       id, rocketName, description, flickrImages, reserved,
@@ -15,7 +13,6 @@ const Rockets = (rocket) => {
   } = rocket;
 
   const handleReservation = () => {
-    console.log('clicked');
     dispatch(updateRocket(id));
   };
 
