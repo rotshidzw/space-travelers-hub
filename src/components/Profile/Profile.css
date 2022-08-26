@@ -1,0 +1,71 @@
+.profile-content {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.mission-list {
+  border: 1px solid goldenrod;
+}
+
+.rocket-list {
+  border: 1px solid goldenrod;
+}
+
+.user-missions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-rockets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-rockets li,
+.user-missions li {
+  display: flex;
+  border-bottom: 1px solid goldenrod;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.action-btns .leave-mission-btn,
+.action-btns .cancel-rocket-btn {
+  background-color: #f00;
+  color: #fff;
+  border: 1px solid #f00;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btns .read-more-btn,
+.action-btns .join-btn {
+  background-color: transparent;
+  border: 1px solid #6c757e;
+  padding: 5px;
+  border-radius: 5px;
+  color: #6c757e;
+  cursor: pointer;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 40%;
+  gap: 5px;
+}
+
+.mission-name {
+  flex: 2 1 50%;
+}

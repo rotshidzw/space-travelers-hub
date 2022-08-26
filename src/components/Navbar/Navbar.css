@@ -1,0 +1,50 @@
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  box-shadow: 0 2px 5px -5px #888;
+}
+
+.navbar-top {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-head {
+  margin: 0 !important;
+  height: min-content;
+  font-size: 3rem;
+  margin-top: 50%;
+}
+
+.navbar-right-top {
+  display: flex;
+  gap: 30px;
+  margin-top: 1rem;
+  height: min-content;
+}
+
+.navbar-right-top > a {
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: blue;
+}
+
+.styled-link {
+  text-decoration: underline;
+}
+
+.no-styled-link {
+  text-decoration: none;
+}
+
+.img-icon {
+  width: 60px;
+  height: 60px;
+}
+
+hr {
+  height: 1rem;
+  width: 0.1rem;
+}
