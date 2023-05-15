@@ -1,4 +1,6 @@
 # Space Traveller's Hub
+![image](https://github.com/rotshidzw/space-travelers-hub/assets/69056906/1e5266b6-5bf9-4000-afc4-12a454e905ff)
+
 
 > A simple and interractive React App that utilises an external `space X` API to provide information about space rockets and missions. User can reserve rockets, join mission and these can be viewed in a the user's profile. A user can also read more about the rockets and missions.
  
